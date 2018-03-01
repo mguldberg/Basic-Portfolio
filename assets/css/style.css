@@ -126,13 +126,23 @@ hr {
 /* used on the portfolio images - portfolio.html to define
  the layout of each image, also on defines the size, location, 
  etc of theadshot image in index.html */
-.portfoliodiv, #aboutmeheadshot  {
+.portfoliodiv {
     width: 190px;
     float: left;
     top:0;
     position: relative;
     margin-right: 30px;
     margin-bottom: 30px;
+    display: block;
+
+}
+
+#aboutmeheadshot  {
+    width: 190px;
+    float: left;
+    top:0;
+    position: relative;
+    margin-right: 30px;
     display: block;
 
 }
