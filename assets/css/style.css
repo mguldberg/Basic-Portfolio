@@ -1,0 +1,231 @@
+/**
+ * hw #1 style.css
+ **/
+
+/* * {
+    text-align: center;
+} */
+
+html, body {
+    height: 100%;
+}
+
+/* sets up default font-size, display and 
+ * flex-direction is put in for sticky footer */
+body {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+
+}
+ 
+/* sets up header fixed width, and centers text and sets */
+header {
+    background: #ffffff;
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+  
+/* used for name text - top left */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 35px;
+    font-weight: bold;
+}
+
+/* links to other pages - top right */
+h2 {
+    font-size: 18px;
+    text-align: right;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+/* common tag for top sections and the content section */
+div {
+    /* padding: 5px; */
+    background: #ffffff;
+}
+
+/* push header divs left and right inside of the header */
+#topleft {
+    float: left;
+    width: auto;
+}
+  
+#topright {
+    float: right;
+    width: auto;
+}
+
+/* a tags: sets what happens when mouse moves over
+links or what happens when a link is clicked */
+a, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* top level section for vertical middle of web page 
+also sets wallpaper behind content box*/
+#middle {
+    width: 100%;
+    overflow: auto;
+    clear: both;
+    background-image: url("../images/45degree_fabric.png");
+    border-top-color: #ccc;
+    border-top-width: 2px ;
+    border-top-style: solid;
+    flex: 1 0 auto;
+}
+
+/* main content box for page - vertical middle of page - part of #middle */
+#contentbox {
+    float: middle;
+    margin-top: 40px;
+    margin-bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: #ffffff;
+    width: 900px;
+    border: 1px solid #ddd;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /*margin: 0 auto;  */
+    line-height: 32px;
+
+}
+
+/* formatting the line in the main content section 
+   in the About Me page - index.html */
+hr {
+    background-color: #ddd;
+    color: #ddd;
+    border: solid .5px #dddddd;
+    height: .5px;
+    width: 100%;
+}
+
+#middletextcontent {
+    word-wrap: normal;
+    padding-top: 18px;
+    
+}
+
+/* used on the portfolio images - portfolio.html to define
+ the layout of each image, also on defines the size, location, 
+ etc of theadshot image in index.html */
+.portfoliodiv, #aboutmeheadshot  {
+    width: 190px;
+    float: left;
+    top:0;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: block;
+
+}
+
+.portfoliotextbox {
+    position: absolute;
+    height: 25px;
+    width:190px;
+    left: 0;
+    bottom:15px;
+    font-size: 16px;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 3px;
+
+}
+
+/* input sections used in Contact.html code */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: left;
+}
+
+/* input section used in Contact.html code */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* formatting for contact content */
+#contacttext{
+    text-align: left;
+    color: #4aaaa5;
+}
+
+
+/* formats section where the content lives */
+#middletexttitle {
+    margin-bottom: 20px;
+}
+
+/* fomat contact of index.html content section */
+h3 {
+    text-align: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin-bottom: 10px;
+    color: #4aaaa5;
+    font-weight: bold;
+}
+ 
+  h4{
+    color:  #777777;
+    text-align: left;
+    font-size: 20px;
+
+  }
+  #bottom-line {
+    padding: 2px;
+    clear: both;
+    background: #4aaaa5;
+  }
+
+  /* footer details...clear:both will make it on it's own line
+     also has flex attribute for sticky footer to match with
+     code in body up above */
+  footer { 
+    clear: both;
+    background: #666;
+    flex-shrink: 0;
+    
+  }
+  
+  /* font for copyright text in footer */
+  h5{
+    font-size: 10px;
+    color: #ccc;
+    bottom: 0;
+    text-align: center;
+  }
+
+ 
+  
