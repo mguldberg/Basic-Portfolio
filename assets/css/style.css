@@ -177,7 +177,7 @@ input[type=submit] {
 }
 
 /* formatting for contact content */
-#contacttext{
+.contacttext{
     text-align: left;
     color: #4aaaa5;
 }
